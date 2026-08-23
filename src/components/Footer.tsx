@@ -27,7 +27,7 @@ export default function Footer({ navigate }: FooterProps) {
     } else if (key === 'faqs') {
       navigate('/faqs')
     } else if (key === 'gallery') {
-      navigate('/#gallery')
+      navigate('/gallery')
     } else if (key === 'contact') {
       navigate('/#contact')
     }
