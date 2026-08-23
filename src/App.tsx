@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useSEO, PAGE_SEO } from './hooks/useSEO'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -134,6 +135,9 @@ function CTABanner() {
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname)
+
+  const seo = PAGE_SEO[currentPath] || PAGE_SEO['/']
+  useSEO({ ...seo, path: currentPath in PAGE_SEO ? currentPath : '/' })
 
   useEffect(() => {
     const handlePopState = () => {
