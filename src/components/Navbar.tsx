@@ -44,7 +44,7 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
     if (key === 'home') {
       navigate('/')
     } else if (key === 'about') {
-      navigate('/copy-of-home')
+      navigate('/about')
     } else if (key === 'spaces') {
       navigate('/spaces')
     } else if (key === 'services') {
@@ -61,7 +61,7 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
   const isLinkActive = (link: string) => {
     const key = link.toLowerCase()
     if (key === 'home' && currentPath === '/') return true
-    if (key === 'about' && currentPath === '/copy-of-home') return true
+    if (key === 'about' && (currentPath === '/about' || currentPath === '/copy-of-home')) return true
     if (key === 'spaces' && currentPath === '/spaces') return true
     if (key === 'services' && currentPath === '/services') return true
     if (key === 'faqs' && currentPath === '/faqs') return true

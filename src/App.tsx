@@ -173,6 +173,7 @@ export default function App() {
   // Render proper subpage or homepage components
   const renderContent = () => {
     switch (currentPath) {
+      case '/about':
       case '/copy-of-home':
         return <AboutPage navigate={navigate} />
       case '/spaces':

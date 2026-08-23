@@ -19,7 +19,7 @@ export default function Footer({ navigate }: FooterProps) {
     if (key === 'home') {
       navigate('/')
     } else if (key === 'about') {
-      navigate('/copy-of-home')
+      navigate('/about')
     } else if (key === 'spaces') {
       navigate('/spaces')
     } else if (key === 'services') {

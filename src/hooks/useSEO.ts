@@ -62,6 +62,11 @@ export const PAGE_SEO: Record<string, Omit<SEOConfig, 'path'>> = {
     description:
       'Experience luxury and elegance at The Kayal Venue, Coimbatore. A premium outdoor lawn and banquet space for weddings, receptions and celebrations for up to 1000 guests.',
   },
+  '/about': {
+    title: 'About Us | The Kayal Venue, Coimbatore',
+    description:
+      'Discover the story behind The Kayal Venue — a premium wedding and event venue in Coimbatore designed for unforgettable celebrations.',
+  },
   '/copy-of-home': {
     title: 'About Us | The Kayal Venue, Coimbatore',
     description:
