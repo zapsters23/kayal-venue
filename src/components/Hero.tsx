@@ -2,22 +2,14 @@ import React, { useEffect, useRef, useState } from 'react'
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
-  const [videoSrc, setVideoSrc] = useState<string | null>(null)
 
   useEffect(() => {
-    // Serve the smaller, mobile-optimized file on small screens so
-    // iPhones over cellular/Low Data Mode actually buffer and autoplay it.
-    const isMobile = window.matchMedia('(max-width: 768px)').matches
-    setVideoSrc(isMobile ? '/herovideo-mobile.mp4' : '/herovideo.mp4')
-  }, [])
-
-  useEffect(() => {
-    if (videoRef.current && videoSrc) {
+    if (videoRef.current) {
       videoRef.current.muted = true
       videoRef.current.load()
       videoRef.current.play().catch(() => {})
     }
-  }, [videoSrc])
+  }, [])
 
   return (
     <section
@@ -53,7 +45,8 @@ export default function Hero() {
           transformOrigin: 'center bottom',
         }}
       >
-        {videoSrc && <source src={videoSrc} type="video/mp4" />}
+        <source src="/hero-small.webm" type="video/webm" />
+        <source src="/hero-small.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
