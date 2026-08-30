@@ -99,8 +99,8 @@ export default function FAQsPage({ navigate }: FAQsPageProps) {
       q: 'What is included in the venue rental?',
       a: (
         <div>
-          <p style={{ marginBottom: '12px' }}>The venue rental fee includes the use of the booked venue spaces along with essential venue services required to host your function comfortably and efficiently.</p>
-          <p style={{ marginBottom: '12px' }}>The rental includes:</p>
+          <p style={{ marginBottom: '12px' }}>The venue rental and amenities fee includes use of the booked venue spaces, along with essential venue services needed to host your function comfortably and efficiently.</p>
+          <p style={{ marginBottom: '12px' }}>The Rent with Amenities fee includes:</p>
           <ul style={{ paddingLeft: '20px', listStyleType: 'disc', display: 'flex', flexDirection: 'column', gap: '4px', marginBottom: '12px' }}>
             <li>Access to the booked venue spaces</li>
             <li>500 guest chairs</li>
@@ -110,9 +110,11 @@ export default function FAQsPage({ navigate }: FAQsPageProps) {
             <li>Use of the pantry, dosa counter, and live food counter areas</li>
             <li>Pre-event venue cleaning, post-event cleaning, garbage collection, and waste disposal</li>
             <li>General venue maintenance during the event period</li>
+            <li>Electricity charges</li>
+            <li>Power backup charges</li>
           </ul>
           <p style={{ marginBottom: '12px' }}>The dining hall can comfortably accommodate approximately 120 guests at a time for buffet or for traditional leaf-service dining.</p>
-          <p>Optional weather-protection solutions such as German Tents, Ceiling Tents, or Arabian Tents can be arranged at an additional cost if required.</p>
+          <p>Optional weather-protection solutions such as German Tents, Ceiling Tents, or Arabian Tents can be arranged by our preferred décor at an additional cost if required.</p>
         </div>
       )
     },
@@ -121,7 +123,8 @@ export default function FAQsPage({ navigate }: FAQsPageProps) {
       a: (
         <div>
           <p style={{ marginBottom: '12px' }}>Yes. The venue is equipped with a generator backup system featuring automatic changeover.</p>
-          <p>In the event of a power outage, the generator automatically takes over, helping ensure that venue lighting, stage lighting, sound systems, and other essential event facilities continue operating with minimal disruption.</p>
+          <p style={{ marginBottom: '12px' }}>In the event of a power outage, the generator automatically takes over, helping ensure that venue lighting, stage lighting, sound systems, and other essential event facilities continue operating with minimal disruption.</p>
+          <p>Electricity and power backup charges are included in the Rent with Amenities fees.</p>
         </div>
       )
     },
